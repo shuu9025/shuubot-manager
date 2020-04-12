@@ -48,7 +48,7 @@ namespace shuuBotManager
                 return;
             }
             Encoding enc = Encoding.GetEncoding("UTF-8");
-            string url = $"http://nat.mcua.net:8080/{textBox1.Text}/servers";
+            string url = $"https://shuubot.ml/{textBox1.Text}/servers";
             WebRequest req = WebRequest.Create(url);
             WebResponse res;
             try
@@ -92,7 +92,7 @@ namespace shuuBotManager
                 return;
             }
             Encoding enc = Encoding.GetEncoding("UTF-8");
-            string url = $"http://nat.mcua.net:8080/{textBox1.Text}/server/{servers["message"][listBox1.SelectedIndex]["id"]}/info";
+            string url = $"https://shuubot.ml/{textBox1.Text}/server/{servers["message"][listBox1.SelectedIndex]["id"]}/info";
             WebRequest req = WebRequest.Create(url);
             WebResponse res;
             try
@@ -127,7 +127,7 @@ namespace shuuBotManager
             }
             label4.Text = $"メンバーリスト ({lastserverinfo["message"]["BaseData"]["MemberCount"]})";
             listBox3.Items.Clear();
-            url = $"http://nat.mcua.net:8080/{textBox1.Text}/server/{servers["message"][listBox1.SelectedIndex]["id"]}/channels";
+            url = $"https://shuubot.ml/{textBox1.Text}/server/{servers["message"][listBox1.SelectedIndex]["id"]}/channels";
             req = WebRequest.Create(url);
             try
             {
@@ -182,7 +182,7 @@ namespace shuuBotManager
         {
             ready = false;
             Encoding enc = Encoding.GetEncoding("UTF-8");
-            string url = $"http://nat.mcua.net:8080/{textBox1.Text}/server/{servers["message"][listBox1.SelectedIndex]["id"]}/info";
+            string url = $"https://shuubot.ml/{textBox1.Text}/server/{servers["message"][listBox1.SelectedIndex]["id"]}/info";
             WebRequest req = WebRequest.Create(url);
             WebResponse res;
             try
@@ -338,7 +338,7 @@ namespace shuuBotManager
                 {
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                    var response = await client.PostAsync($"http://nat.mcua.net:8080/{textBox1.Text}/server/{servers["message"][listBox1.SelectedIndex]["id"]}/setlogchannel", content);
+                    var response = await client.PostAsync($"https://shuubot.ml/{textBox1.Text}/server/{servers["message"][listBox1.SelectedIndex]["id"]}/setlogchannel", content);
                 }
             }
 
@@ -368,7 +368,7 @@ namespace shuuBotManager
                 {
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                    var response = await client.PostAsync($"http://nat.mcua.net:8080/{textBox1.Text}/server/{servers["message"][listBox1.SelectedIndex]["id"]}/setlogchannel", content);
+                    var response = await client.PostAsync($"https://shuubot.ml/{textBox1.Text}/server/{servers["message"][listBox1.SelectedIndex]["id"]}/setlogchannel", content);
                 }
             }
             catch (KeyNotFoundException)
