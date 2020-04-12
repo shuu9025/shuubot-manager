@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shuuBotManager", "shuuBotManager\shuuBotManager.csproj", "{BE81931B-26E5-42F6-8120-B0D36455141C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE81931B-26E5-42F6-8120-B0D36455141C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE81931B-26E5-42F6-8120-B0D36455141C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE81931B-26E5-42F6-8120-B0D36455141C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE81931B-26E5-42F6-8120-B0D36455141C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {613419BB-CA56-4694-A54E-B8C06CFDEE00}
+	EndGlobalSection
+EndGlobal
